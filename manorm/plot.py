@@ -60,7 +60,7 @@ def plt_figures(root_dir, peaks1, peaks2, peaks_merged, ma_params):
     ax.set_title("M-A model fitted on common peaks", fontsize=10)
     fig.subplots_adjust(left=0.15, right=0.9, bottom=0.15, top=0.9)
     plt.savefig(os.path.join(root_dir, 'output_figures', output_prefix +
-                             '_read_density_on_common_peaks.pdf'))
+                             '_read_density_on_common_peaks.png'))
 
     # plot the MA plot before normalization
     fig, ax = plt.subplots(figsize=(4, 3))
@@ -89,7 +89,7 @@ def plt_figures(root_dir, peaks1, peaks2, peaks_merged, ma_params):
               handletextpad=0, markerscale=2, frameon=False)
     fig.subplots_adjust(left=0.15, right=0.95, bottom=0.15, top=0.9)
     fig.savefig(os.path.join(root_dir, 'output_figures', output_prefix +
-                             '_MA_plot_before_normalization.pdf'))
+                             '_MA_plot_before_normalization.png'))
 
     # plot the MA plot after normalization
     fig, ax = plt.subplots(figsize=(4, 3))
@@ -111,7 +111,7 @@ def plt_figures(root_dir, peaks1, peaks2, peaks_merged, ma_params):
               handletextpad=0, markerscale=2, frameon=False)
     fig.subplots_adjust(left=0.15, right=0.95, bottom=0.15, top=0.9)
     fig.savefig(os.path.join(root_dir, 'output_figures', output_prefix +
-                             '_MA_plot_after_normalization.pdf'))
+                             '_MA_plot_after_normalization.png'))
 
     # plot the MA plot after normalization colored by P value
     fig, ax = plt.subplots(figsize=(4, 3))
@@ -142,4 +142,4 @@ def plt_figures(root_dir, peaks1, peaks2, peaks_merged, ma_params):
     cbar.set_label("$-log_{10}$($P$-value)", fontsize=7)
     fig.subplots_adjust(left=0.15, right=0.98, bottom=0.15, top=0.9)
     fig.savefig(os.path.join(root_dir, 'output_figures', output_prefix +
-                             '_MA_plot_with_P_value.pdf'))
+                             '_MA_plot_with_P_value.png'))
